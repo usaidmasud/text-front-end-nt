@@ -18,14 +18,14 @@ function CardProduct({
 }: CardProductProps) {
   return (
     //
-    <div className="bg-[#1B1B1B] p-4 rounded-xl w-full max-w-[228px] ">
+    <div className="bg-[#1B1B1B] p-4 rounded-xl w-full  2xl:max-w-[228px] ">
       <span className="text-white text-base font-medium leading-[143%] tracking-[0.04px]">
         {thousandFormat(price.toString())} NT
       </span>
-      <div className="relative h-[153px] w-auto mt-3">
+      <div className="relative h-[125px] lg:h-[250px] xl:h-[250px] 2xl:h-[153px] w-auto mt-3">
         <Image
           fill
-          className="rounded-lg"
+          className="rounded-lg object-cover"
           src={imageUrl}
           alt={imageUrl ?? name}
         />
