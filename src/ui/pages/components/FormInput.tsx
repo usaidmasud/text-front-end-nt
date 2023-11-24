@@ -9,7 +9,13 @@ interface FormInputProps {
   prefix?: string;
 }
 
-function FormInput({ label, placeholder, type, prefix }: FormInputProps) {
+function FormInput({
+  label,
+  placeholder,
+  type,
+  prefix,
+  required,
+}: FormInputProps) {
   return (
     <div className="block w-full relative">
       <label
@@ -17,6 +23,9 @@ function FormInput({ label, placeholder, type, prefix }: FormInputProps) {
         className="font-poppins font-medium text-sm block leading-[133%] tracking-[0.056px] text-[#C9CACB] mb-1"
       >
         {label}
+        {required && (
+          <span className="font-inter text-sm text-[#F47566]">*</span>
+        )}
       </label>
       <input
         type={type ?? "text"}
@@ -27,7 +36,7 @@ function FormInput({ label, placeholder, type, prefix }: FormInputProps) {
         placeholder={placeholder ?? label}
       />
       {prefix && (
-        <span className="text-[#FCFCFD] font-poppins text-sm font-semibold leading-[133%] tracking-[0.056px] absolute inset-y-8 left-3">
+        <span className="text-[#FCFCFD] font-poppins text-sm font-semibold leading-[133%] tracking-[0.056px] absolute inset-y-[34px] left-3">
           {prefix}
         </span>
       )}

@@ -44,16 +44,18 @@ function ModalForm({}: ModalFormProps) {
           </div>
           <div className="col-span-2">
             <FormText
+            required
               label="Tell me more about your product"
               placeholder="Product description"
             />
           </div>
           <div className="col-span-2 :col-span-1">
             <FormInput
+            required
               prefix="NT$"
               type="number"
               label="Price"
-              placeholder="Product description"
+              placeholder="Price"
             />
           </div>
           <div className="col-span-2 :col-span-1">
@@ -61,11 +63,11 @@ function ModalForm({}: ModalFormProps) {
               prefix="NT$"
               type="number"
               label="Discount price (optional)"
-              placeholder="Product description"
+              placeholder="Discount price"
             />
           </div>
           <div className="col-span-2">
-            <FormUpload label="Upload" placeholder="Select file" />
+            <FormUpload required label="Upload" placeholder="Select file" />
           </div>
           <div className="col-span-2">
             <FormSwitch label="Enable Variant" />

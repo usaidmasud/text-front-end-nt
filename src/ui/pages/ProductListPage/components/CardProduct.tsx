@@ -22,7 +22,7 @@ function CardProduct({
       <span className="text-white text-base font-medium leading-[143%] tracking-[0.04px]">
         {thousandFormat(price.toString())} NT
       </span>
-      <div className="relative h-[125px] lg:h-[250px] xl:h-[250px] 2xl:h-[153px] w-auto mt-3">
+      <div className="relative h-[145px] lg:h-[220px] xl:h-[250px] 2xl:h-[153px] w-auto mt-3">
         <Image
           fill
           className="rounded-lg object-cover"

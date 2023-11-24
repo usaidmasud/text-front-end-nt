@@ -35,8 +35,8 @@
   position: relative;
   background-color: #222222;
   background-clip: padding-box;
-  border: 2px solid #c800cc;
-  border-radius: 0px;
+  //border: 2px solid #c800cc;
+  border-radius: 8px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
   pointer-events: auto;
@@ -49,7 +49,7 @@
   inset-inline-end: 17px;
   z-index: 1010;
   padding: 0;
-  color: #fff;
+  color: #898e9a;
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
@@ -64,8 +64,5 @@
 }
 
 .ant-modal .ant-modal-close:hover {
-  color: rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 0, 0, 0.06);
-  text-decoration: none;
+  @apply text-[#FCFCFD];
 }
-

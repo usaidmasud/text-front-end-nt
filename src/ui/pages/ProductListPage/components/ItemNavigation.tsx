@@ -15,7 +15,7 @@ function ItemNavigation({ label, active }: ItemNavigationProps) {
     >
       <span
         className={clsx(
-          " text-sm font-medium leading-[133%] tracking-[0.056px] hover:text-[#ef9533] duration-300",
+          "text-xs md:text-sm font-medium leading-[133%] tracking-[0.056px] hover:text-[#ef9533] duration-300",
           active && "text-[#EF9533]",
           !active && "text-[#9F9E9F]"
         )}

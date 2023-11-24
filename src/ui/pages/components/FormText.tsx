@@ -1,9 +1,10 @@
 interface FormTextProps {
   label: string;
   placeholder?: string;
+  required?:boolean
 }
 
-function FormText({ label, placeholder }: FormTextProps) {
+function FormText({ label, placeholder, required }: FormTextProps) {
   return (
     <div className="block w-full">
       <label
@@ -11,6 +12,9 @@ function FormText({ label, placeholder }: FormTextProps) {
         className="font-poppins font-medium text-sm block leading-[133%] tracking-[0.056px] text-[#C9CACB] mb-1"
       >
         {label}
+        {required && (
+          <span className="font-inter text-sm text-[#F47566]">*</span>
+        )}
       </label>
       <textarea
         cols={30}

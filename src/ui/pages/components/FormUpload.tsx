@@ -10,7 +10,13 @@ interface FormUploadProps {
   prefix?: string;
 }
 
-function FormUpload({ label, placeholder, type, prefix }: FormUploadProps) {
+function FormUpload({
+  label,
+  placeholder,
+  type,
+  prefix,
+  required,
+}: FormUploadProps) {
   return (
     <div className="block w-full relative">
       <label
@@ -18,6 +24,9 @@ function FormUpload({ label, placeholder, type, prefix }: FormUploadProps) {
         className="font-poppins font-medium text-sm block leading-[133%] tracking-[0.056px] text-[#C9CACB] mb-1"
       >
         {label}
+        {required && (
+          <span className="font-inter text-sm text-[#F47566]">*</span>
+        )}
       </label>
       <input type="file" name="" hidden id="upload-file" />
       <label

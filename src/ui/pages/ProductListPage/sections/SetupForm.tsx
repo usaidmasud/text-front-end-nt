@@ -17,7 +17,7 @@ const categories = [
 ];
 function SetupForm({}: SetupFormProps) {
   return (
-    <div className="px-10 md:px-[calc(246px-140px)] lg:px-[calc(246px-180px)] xl:px-[calc(246px-190px)] 2xl:px-[calc(246px)] mt-10 md:mt-20">
+    <div className="px-10 md:px-[calc(247px-140px)] lg:px-[calc(247px-160px)] xl:px-[calc(247px-160px)] 2xl:px-[247px]  mt-10 md:mt-20">
       <div className="flex flex-col-reverse gap-5 md:gap-0 md:flex-row md:justify-between items-center">
         <FormSearch />
         <ButtonImport />
@@ -32,7 +32,7 @@ function SetupForm({}: SetupFormProps) {
         <img
           src="/assets/icons/pencil.svg"
           alt="/assets/icons/pencil.svg"
-          className=""
+          className="cursor-pointer"
         />
       </div>
 
