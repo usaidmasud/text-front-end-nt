@@ -3,6 +3,7 @@
 import AddProduct from "../components/AddProduct";
 import CardProduct from "../components/CardProduct";
 import Tag from "../components/Tag";
+import ModalForm from "./ModalForm";
 
 interface SetupFormProps {}
 
@@ -56,6 +57,7 @@ function SetupForm({}: SetupFormProps) {
         />
         <AddProduct />
       </div>
+      <ModalForm/>
     </div>
   );
 }
