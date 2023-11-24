@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root-background {
+  background: var(
+    --BG_landing2,
+    linear-gradient(
+      2deg,
+      #101010 79.11%,
+      rgba(0, 0, 0, 0) 103.73%,
+      rgba(0, 0, 0, 0) 103.73%
+    ),
+    linear-gradient(174deg, #a060fa 17.25%, #c800cc 58.14%)
+  );
+}
+
+.product-name {
+  background: var(
+    --gradient-linear,
+    linear-gradient(90deg, #a060fa 22.29%, #c800cc 81.69%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
